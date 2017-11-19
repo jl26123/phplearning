@@ -1,5 +1,5 @@
 <?php
-	//namespace ResourceLu;
+	namespace phplearning\php\Advance\namespaces;
 	class Table{
 		public static function get(){
 			echo "ResourceLu.Table.get()";
