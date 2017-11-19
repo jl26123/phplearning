@@ -1,0 +1,12 @@
+.personal-image{
+	border: 1px solid transparent;
+	border-radius:50%;
+}
+
+.personal-name{
+	background: gray;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
