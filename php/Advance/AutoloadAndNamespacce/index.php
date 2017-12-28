@@ -13,6 +13,7 @@ spl_autoload_register(
 		/*只有没找到的类是在我们创建的namespace中的才会加载*/
 		if(strncmp($prefix,$classNameNotFound,$len)===0)
 		{	
+			/*jixiang\phplearning\com\BClass ===> com\BClass*/
 			$className = substr($classNameNotFound,$len);
 			/*windows 是\ back slash 所以不用变*/
 			$file = $baseDir.$className.'.php';
@@ -23,7 +24,6 @@ spl_autoload_register(
 			{
 				require_once "$file";
 			}
-		}
 
 		
 	}
